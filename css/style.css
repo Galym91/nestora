@@ -319,9 +319,9 @@ footer {
     -webkit-appearance: none;
     margin: 0;
 }
-/* МОБИЛЬДІ ҚҰРЫЛҒЫЛАРҒА АРНАЛҒАН БЕЙІМДЕЛУ */
+/* МОБИЛЬДІ ҚҰРЫЛҒЫЛАРҒА АРНАЛҒАН БЕЙІМДЕЛУ (NESTORA) */
 @media (max-width: 768px) {
-    /* Навигацияны телефонда тігінен, ортаға жинау */
+    /* Навигацияны ортаға жинау */
     .navbar {
         flex-direction: column;
         gap: 1rem;
@@ -334,42 +334,59 @@ footer {
         gap: 1rem;
     }
     
-    /* Басты блоктардың ішкі арақашықтығын азайту */
-    .profile-section, .hero, .products, .properties, .portfolio-section {
-        padding: 3rem 1rem;
-        flex-direction: column;
-        text-align: center;
+    /* Басты фонның астынан іздеу панеліне орын қалдыру */
+    .hero {
+        padding: 4rem 1rem 5rem;
     }
-    
-    /* Үлкен тақырыптардың шрифтін кішірейту */
-    .profile-info h1, .hero h1 {
+    .hero h1 {
         font-size: 2.2rem;
     }
     
-    /* Түймелер мен іздеу формаларын экранға толық сыйдыру */
-    .social-links {
-        justify-content: center;
+    /* Іздеу панелін телефонға толық сыйдыру */
+    .search-wrapper {
+        margin-top: -2rem; /* Аздап қана үстіне шығып тұрады */
+        padding: 0 1rem;
     }
     
     .search-box {
-        flex-direction: column;
+        flex-direction: column; /* Ұяшықтарды тігінен қою */
+        padding: 1.5rem 1rem;
+        gap: 1.2rem;
     }
     
     .search-item {
         width: 100%;
+        min-width: 100%;
+    }
+    
+    .search-item input, 
+    .search-item select {
+        width: 100%; /* Экранның енін толық алу үшін */
+        box-sizing: border-box;
     }
     
     .price-inputs {
-        flex-direction: column;
+        flex-direction: column; /* Бағаларды (мин/макс) астылы-үстілі қою */
+        gap: 0.8rem;
     }
     
     .price-inputs input {
         width: 100%;
     }
     
-    /* Статистика блоктарының арасын жақындату */
+    .search-btn {
+        width: 100%; /* Іздеу батырмасын үлкейту */
+        margin-top: 0.5rem;
+        padding: 1rem;
+    }
+    
+    /* Каталог пен статистиканы реттеу */
+    .properties, .stats {
+        padding: 3rem 1rem;
+    }
+    
     .stats {
         gap: 2rem;
-        padding: 3rem 1rem;
+        flex-direction: column; /* Статистиканы тігінен қою */
     }
 }
