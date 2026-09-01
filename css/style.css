@@ -1,0 +1,321 @@
+/* Жалпы баптаулар және Түстер палитрасы */
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --dark: #0f172a;
+    --light-bg: #f8fafc;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --accent: #10b981; /* Жасыл түс - Сатылым үшін */
+    --accent-orange: #f59e0b; /* Сары түс - Жалға беру үшін */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-main);
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1.2rem 5%;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.lang-switch {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-switch a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    transition: 0.2s;
+}
+
+.lang-switch a.active, .lang-switch a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+/* Басты блок (Hero) */
+.hero {
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 7rem 1rem 9rem;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+/* Кеңейтілген Іздеу панелі (Фильтр) */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+    position: relative;
+    z-index: 10;
+    padding: 0 5%;
+}
+
+.search-box {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.search-item {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.search-item label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.search-box input, .search-box select {
+    padding: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    background-color: var(--light-bg);
+}
+
+.search-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 0 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1.6rem;
+}
+
+.search-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Танымал үйлер (Каталог) */
+.properties {
+    padding: 6rem 5%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--dark);
+    margin-bottom: 3rem;
+    font-weight: 800;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.prop-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    position: relative;
+}
+
+.prop-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--white);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.badge.sale { background-color: var(--accent); }
+.badge.rent { background-color: var(--accent-orange); }
+
+.prop-img {
+    height: 240px;
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.prop-info {
+    padding: 1.5rem;
+}
+
+.prop-price {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.prop-title {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.prop-location {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.prop-specs {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.prop-specs span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Статистика бөлімі */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 4rem 5%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.stat-item h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: #94a3b8;
+    text-align: center;
+    padding: 3rem 5%;
+}
+/* Баға енгізу ұяшықтары (Мин / Макс) */
+.price-inputs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.price-inputs input {
+    width: 50%;
+}
+
+/* Сан жазатын ұяшықтағы (number) оң жақтағы артық стрелкаларды алып тастау */
+.price-inputs input[type="number"]::-webkit-inner-spin-button,
+.price-inputs input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

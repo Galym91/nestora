@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestora - Премиум Жылжымайтын мүлік</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Nestora.</a>
+        <ul class="nav-links">
+            <li><a href="#home">Басты бет</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#agents">Агенттер</a></li>
+        </ul>
+        <div class="lang-switch">
+            <a href="index.html" class="active">KZ</a>
+            <a href="index-ru.html">RU</a>
+            <a href="index-en.html">EN</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Арманыңыздағы үйді табыңыз</h1>
+        <p>Қазақстан бойынша ең жақсы пәтерлер мен үйлерді жалға алу немесе сатып алу.</p>
+    </header>
+
+    <main>
+        <!-- Кеңейтілген іздеу (Фильтр) -->
+        <div class="search-wrapper">
+            <div class="search-box">
+                <div class="search-item">
+                    <label>Орналасуы</label>
+                    <input type="text" placeholder="Қала немесе аудан">
+                </div>
+                <div class="search-item">
+                    <label>Мүлік түрі</label>
+                    <select>
+                        <option>Барлығы</option>
+                        <option>Пәтер</option>
+                        <option>Жер үй</option>
+                        <option>Коммерциялық</option>
+                    </select>
+                </div>
+                <!-- Жаңартылған баға бөлімі -->
+                <div class="search-item">
+                    <label>Баға диапазоны (₸)</label>
+                    <div class="price-inputs">
+                        <input type="number" placeholder="Мин. баға">
+                        <input type="number" placeholder="Макс. баға">
+                    </div>
+                </div>
+                <button class="search-btn">Іздеу</button>
+            </div>
+        </div>
+
+        <!-- Каталог -->
+        <section class="properties" id="catalog">
+            <h2 class="section-title">Соңғы ұсыныстар</h2>
+            <div class="grid">
+                
+                <div class="prop-card">
+                    <span class="badge sale">САТЫЛАДЫ</span>
+                    <div class="prop-img">Үйдің суреті</div>
+                    <div class="prop-info">
+                        <div class="prop-price">45 000 000 ₸</div>
+                        <h3 class="prop-title">Premium 3 бөлмелі пәтер</h3>
+                        <p class="prop-location">📍 Алматы, Бостандық ауданы</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 3 Бөлме</span>
+                            <span>🛁 2 Ванна</span>
+                            <span>📐 85 м²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prop-card">
+                    <span class="badge rent">ЖАЛҒА БЕРІЛЕДІ</span>
+                    <div class="prop-img">Пәтер суреті</div>
+                    <div class="prop-info">
+                        <div class="prop-price">350 000 ₸ / айына</div>
+                        <h3 class="prop-title">Жайлы 2 бөлмелі пәтер</h3>
+                        <p class="prop-location">📍 Астана, Есіл ауданы</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 2 Бөлме</span>
+                            <span>🛁 1 Ванна</span>
+                            <span>📐 65 м²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prop-card">
+                    <span class="badge sale">САТЫЛАДЫ</span>
+                    <div class="prop-img">Вилла суреті</div>
+                    <div class="prop-info">
+                        <div class="prop-price">120 000 000 ₸</div>
+                        <h3 class="prop-title">Заманауи Жер үй (Вилла)</h3>
+                        <p class="prop-location">📍 Шымкент, Қаратау ауданы</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 5 Бөлме</span>
+                            <span>🛁 3 Ванна</span>
+                            <span>📐 240 м²</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Статистика -->
+        <section class="stats" id="agents">
+            <div class="stat-item">
+                <h2>500+</h2>
+                <p>Сатылған үйлер</p>
+            </div>
+            <div class="stat-item">
+                <h2>120+</h2>
+                <p>Кәсіби агенттер</p>
+            </div>
+            <div class="stat-item">
+                <h2>10k+</h2>
+                <p>Риза клиенттер</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nestora. Барлық құқықтар қорғалған. | Жоба авторы: Ғалым</p>
+    </footer>
+
+</body>
+</html>

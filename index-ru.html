@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestora - Премиум Недвижимость</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Nestora.</a>
+        <ul class="nav-links">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#agents">Агенты</a></li>
+        </ul>
+        <div class="lang-switch">
+            <a href="index.html">KZ</a>
+            <a href="index-ru.html" class="active">RU</a>
+            <a href="index-en.html">EN</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Найдите дом своей мечты</h1>
+        <p>Лучшие квартиры и дома для аренды или покупки по всему Казахстану.</p>
+    </header>
+
+    <main>
+        <div class="search-wrapper">
+            <div class="search-box">
+                <div class="search-item">
+                    <label>Локация</label>
+                    <input type="text" placeholder="Город или район">
+                </div>
+                <div class="search-item">
+                    <label>Тип недвижимости</label>
+                    <select>
+                        <option>Все типы</option>
+                        <option>Квартира</option>
+                        <option>Дом</option>
+                        <option>Коммерческая</option>
+                    </select>
+                </div>
+                <!-- Обновленный блок цены -->
+                <div class="search-item">
+                    <label>Диапазон цен (₸)</label>
+                    <div class="price-inputs">
+                        <input type="number" placeholder="Мин. цена">
+                        <input type="number" placeholder="Макс. цена">
+                    </div>
+                </div>
+                <button class="search-btn">Найти</button>
+            </div>
+        </div>
+
+        <section class="properties" id="catalog">
+            <h2 class="section-title">Последние предложения</h2>
+            <div class="grid">
+                
+                <div class="prop-card">
+                    <span class="badge sale">ПРОДАЖА</span>
+                    <div class="prop-img">Фото дома</div>
+                    <div class="prop-info">
+                        <div class="prop-price">45 000 000 ₸</div>
+                        <h3 class="prop-title">Premium 3-комн. квартира</h3>
+                        <p class="prop-location">📍 Алматы, Бостандыкский район</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 3 Комнаты</span>
+                            <span>🛁 2 Ванные</span>
+                            <span>📐 85 м²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prop-card">
+                    <span class="badge rent">АРЕНДА</span>
+                    <div class="prop-img">Фото квартиры</div>
+                    <div class="prop-info">
+                        <div class="prop-price">350 000 ₸ / месяц</div>
+                        <h3 class="prop-title">Уютная 2-комн. квартира</h3>
+                        <p class="prop-location">📍 Астана, Есильский район</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 2 Комнаты</span>
+                            <span>🛁 1 Ванная</span>
+                            <span>📐 65 м²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prop-card">
+                    <span class="badge sale">ПРОДАЖА</span>
+                    <div class="prop-img">Фото виллы</div>
+                    <div class="prop-info">
+                        <div class="prop-price">120 000 000 ₸</div>
+                        <h3 class="prop-title">Современный Дом (Вилла)</h3>
+                        <p class="prop-location">📍 Шымкент, Каратауский район</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 5 Комнат</span>
+                            <span>🛁 3 Ванные</span>
+                            <span>📐 240 м²</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="stats" id="agents">
+            <div class="stat-item">
+                <h2>500+</h2>
+                <p>Проданных домов</p>
+            </div>
+            <div class="stat-item">
+                <h2>120+</h2>
+                <p>Опытных агентов</p>
+            </div>
+            <div class="stat-item">
+                <h2>10k+</h2>
+                <p>Довольных клиентов</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nestora. Все права защищены. | Автор проекта: Галым</p>
+    </footer>
+
+</body>
+</html>

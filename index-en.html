@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestora - Premium Real Estate</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Nestora.</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#catalog">Properties</a></li>
+            <li><a href="#agents">Agents</a></li>
+        </ul>
+        <div class="lang-switch">
+            <a href="index.html">KZ</a>
+            <a href="index-ru.html">RU</a>
+            <a href="index-en.html" class="active">EN</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Find Your Dream Home</h1>
+        <p>The best apartments and houses to rent or buy across Kazakhstan.</p>
+    </header>
+
+    <main>
+        <div class="search-wrapper">
+            <div class="search-box">
+                <div class="search-item">
+                    <label>Location</label>
+                    <input type="text" placeholder="City or District">
+                </div>
+                <div class="search-item">
+                    <label>Property Type</label>
+                    <select>
+                        <option>All Types</option>
+                        <option>Apartment</option>
+                        <option>House</option>
+                        <option>Commercial</option>
+                    </select>
+                </div>
+                <!-- Updated price block -->
+                <div class="search-item">
+                    <label>Price Range (₸)</label>
+                    <div class="price-inputs">
+                        <input type="number" placeholder="Min price">
+                        <input type="number" placeholder="Max price">
+                    </div>
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+
+        <section class="properties" id="catalog">
+            <h2 class="section-title">Latest Listings</h2>
+            <div class="grid">
+                
+                <div class="prop-card">
+                    <span class="badge sale">FOR SALE</span>
+                    <div class="prop-img">House Image</div>
+                    <div class="prop-info">
+                        <div class="prop-price">45,000,000 ₸</div>
+                        <h3 class="prop-title">Premium 3-Bed Apartment</h3>
+                        <p class="prop-location">📍 Bostandyk District, Almaty</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 3 Beds</span>
+                            <span>🛁 2 Baths</span>
+                            <span>📐 85 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prop-card">
+                    <span class="badge rent">FOR RENT</span>
+                    <div class="prop-img">Apartment Image</div>
+                    <div class="prop-info">
+                        <div class="prop-price">350,000 ₸ / month</div>
+                        <h3 class="prop-title">Cozy 2-Bed Apartment</h3>
+                        <p class="prop-location">📍 Yesil District, Astana</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 2 Beds</span>
+                            <span>🛁 1 Bath</span>
+                            <span>📐 65 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prop-card">
+                    <span class="badge sale">FOR SALE</span>
+                    <div class="prop-img">Villa Image</div>
+                    <div class="prop-info">
+                        <div class="prop-price">120,000,000 ₸</div>
+                        <h3 class="prop-title">Modern Villa House</h3>
+                        <p class="prop-location">📍 Karatau District, Shymkent</p>
+                        <div class="prop-specs">
+                            <span>🛏️ 5 Beds</span>
+                            <span>🛁 3 Baths</span>
+                            <span>📐 240 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="stats" id="agents">
+            <div class="stat-item">
+                <h2>500+</h2>
+                <p>Properties Sold</p>
+            </div>
+            <div class="stat-item">
+                <h2>120+</h2>
+                <p>Expert Agents</p>
+            </div>
+            <div class="stat-item">
+                <h2>10k+</h2>
+                <p>Happy Clients</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nestora. All rights reserved. | Project Author: Galym</p>
+    </footer>
+
+</body>
+</html>
