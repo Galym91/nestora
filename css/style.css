@@ -319,3 +319,57 @@ footer {
     -webkit-appearance: none;
     margin: 0;
 }
+/* МОБИЛЬДІ ҚҰРЫЛҒЫЛАРҒА АРНАЛҒАН БЕЙІМДЕЛУ */
+@media (max-width: 768px) {
+    /* Навигацияны телефонда тігінен, ортаға жинау */
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    /* Басты блоктардың ішкі арақашықтығын азайту */
+    .profile-section, .hero, .products, .properties, .portfolio-section {
+        padding: 3rem 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Үлкен тақырыптардың шрифтін кішірейту */
+    .profile-info h1, .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* Түймелер мен іздеу формаларын экранға толық сыйдыру */
+    .social-links {
+        justify-content: center;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-item {
+        width: 100%;
+    }
+    
+    .price-inputs {
+        flex-direction: column;
+    }
+    
+    .price-inputs input {
+        width: 100%;
+    }
+    
+    /* Статистика блоктарының арасын жақындату */
+    .stats {
+        gap: 2rem;
+        padding: 3rem 1rem;
+    }
+}
